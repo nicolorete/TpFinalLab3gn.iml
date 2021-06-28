@@ -1,0 +1,1 @@
+[{"userName":"german","password":"1234","rol":{"description":"ADMIN"},"name":"german","lastName":"oyarzo","dni":"36384624"},{"userName":"nicolas","password":"1234","rol":{"description":"EMPLEADO"},"name":"nicolas","lastName":"coronel","dni":"40138430"},{"userName":"homero","password":"1234","rol":{"description":"EMPLEADO"},"name":"homero","lastName":"simpson","dni":"1234567"}]

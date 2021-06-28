@@ -1,0 +1,58 @@
+[
+  {
+    "phone": "23131321",
+    "email": "juan@pepe.com",
+    "adress": "avenida siempre vivas",
+    "name": "Pepe",
+    "lastName": "Mujica",
+    "dni": "543232"
+  },
+  {
+    "phone": "549323212",
+    "email": "juan@rodri.com",
+    "adress": "Juan b justo",
+    "name": "Juan",
+    "lastName": "Rodriguez",
+    "dni": "3213121"
+  },
+  {
+    "phone": "23123323",
+    "email": "jose@jose.com",
+    "adress": "colon",
+    "name": "jose",
+    "lastName": "Sanchez",
+    "dni": "32972080"
+  },
+  {
+    "phone": "2235455656",
+    "email": "german@gmail.com",
+    "adress": "bolivar 3600",
+    "name": "german",
+    "lastName": "oyarzo",
+    "dni": "36384624"
+  },
+  {
+    "phone": "2234545",
+    "email": "bart@gmail.com",
+    "adress": "siempre viva 1234",
+    "name": "bart",
+    "lastName": "simpson",
+    "dni": "11223344"
+  },
+  {
+    "phone": "223434454545",
+    "email": "roberto@gmail.com",
+    "adress": "las heras 1700",
+    "name": "roberto",
+    "lastName": "segundo",
+    "dni": "10565337"
+  },
+  {
+    "phone": "1134344",
+    "email": "alber@gmail.com",
+    "adress": "casa blanca",
+    "name": "alberto",
+    "lastName": "fernandez",
+    "dni": "12345678"
+  }
+]
