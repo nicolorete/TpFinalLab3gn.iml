@@ -14,9 +14,7 @@ public class StatusCancha {
         return available;
     }
 
-    public void setAvailable(boolean available) {
-        this.available = available;
-    }
+    //public void setAvailable(boolean available) {this.available = available;}
 
     public String getReaseon() {
         return reason;
