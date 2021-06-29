@@ -1,1 +1,1 @@
-![Portada](/TpFinalLab3gn.iml/PortadaTurneroComplejo.png)
+![](/TpFinalLab3gn.iml/PortadaTurneroComplejo.png)
