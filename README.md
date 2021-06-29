@@ -1,1 +1,1 @@
-[(TpFinalLab3gn.iml/PortadaTurneroComplejo.png) (img / app-all.png)]
+![Portada](/TpFinalLab3gn.iml/PortadaTurneroComplejo.png)
