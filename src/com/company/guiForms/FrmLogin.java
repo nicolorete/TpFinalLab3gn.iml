@@ -49,7 +49,7 @@ public class FrmLogin extends JFrame {
                 }
             }
         });
-
+        //////////////// mostrar contraseña si el check box esta activado sino mostrar *
         showPasswordCheckBox.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
