@@ -25,7 +25,7 @@ public class FrmPrincipal extends JFrame {
 
         if (admin.getRol().getDescription().equals("EMPLEADO")) {
 
-            comboBox.addItem("ADMIN");
+            comboBox.addItem("TURNO");
             comboBox.addItem("CLIENT");
 
         }
