@@ -1,1 +1,1 @@
-![Portada](/TpFinalLab3gn.iml/Portadagit.png)
+![Portada](Portadagit.png)
