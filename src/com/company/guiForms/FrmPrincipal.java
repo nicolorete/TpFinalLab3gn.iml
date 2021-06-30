@@ -20,11 +20,22 @@ public class FrmPrincipal extends JFrame {
     private Object FrnPrincipal;
 
     public FrmPrincipal() {
+        Admin admin = DataBase.getUserLoggin(); /// Busco el usuario que se logeo
+        lblUser.setText("WELCOME: " + admin.getUserName() + " " + "Puesto: " + admin.getRol().getDescription());
 
-        comboBox.addItem("ADMIN");
-        comboBox.addItem("CLIENT");
-        comboBox.addItem("TURNO");
-        comboBox.addItem("CANCHA");
+        if (admin.getRol().getDescription().equals("EMPLEADO")) {
+
+            comboBox.addItem("ADMIN");
+            comboBox.addItem("CLIENT");
+
+        }
+
+        else {
+            comboBox.addItem("ADMIN");
+            comboBox.addItem("CLIENT");
+            comboBox.addItem("TURNO");
+            comboBox.addItem("CANCHA");
+        }
         comboBox.addItemListener(new ItemListener() {
             public void itemStateChanged(ItemEvent e) {
                 if (e.getStateChange() == ItemEvent.SELECTED) {
@@ -44,126 +55,14 @@ public class FrmPrincipal extends JFrame {
         });
 
 
-        Admin admin = DataBase.getUserLoggin(); /// Busco el usuario que se logeo
-        lblUser.setText("WELCOME: " + admin.getUserName() + " " + "Puesto: " + admin.getRol().getDescription());
-
-        if (admin.getRol().getDescription().equals("EMPLEADO")) {
-            btnUser.setVisible(false);
-            btnCancha.setVisible(false);
-
-        }
-
-
-        /*btnCancha.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-                JFrame frame = new JFrame("Cancha");
-                frame.setContentPane(new FrmCanchas(frame).getPanel1());
-                frame.pack();
-                frame.setSize(1200, 600);
-                frame.setLocationRelativeTo(null);
-                frame.setVisible(true);
-
-            }
-        });
-
-        btnTurno.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-
-        btnExit.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(java.awt.event.ActionEvent event) {
-                System.exit(WIDTH);
-            }
-        });
-
-        btnClient.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame frame = new JFrame("Client");
-                frame.setContentPane(new FrmClient(frame).Client);
-                frame.pack();
-                //frame.setSize(800,600);
-                frame.setLocationRelativeTo(null);
-                frame.setVisible(true);
-            }
-        });
-
-        btnUser.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-                JFrame frame = new JFrame("Users");
-                frame.setContentPane(new FrmUser(frame).jPanelUser);
-                frame.pack();
-                frame.setSize(1000, 700);
-                frame.setLocationRelativeTo(null);
-                frame.setVisible(true);
-
-            }
-        });
-
-        btnTurno.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JFrame frame = new JFrame("FrmTurno");
-                frame.setContentPane(new frmTurno().pnlprincipal);
-                frame.pack();
-                frame.setSize(800, 600);
-                frame.setLocationRelativeTo(null);
-                frame.setVisible(true);
-            }
-        });
-    }*/
 
 
 
 
 
-        /*String [] listado= {"ADMIN", "CLIENT", "CANCHA", "TURNO"};
-        comboBox.setSelectedIndex(0);
-        openUser();
-        add(comboBox);
-        comboBox.setSelectedIndex(1);
-        openClient();
-        add(comboBox);
-        comboBox.setSelectedIndex(2);
-        openCancha();
-        add(comboBox);
-        comboBox.setSelectedIndex(3);
-        openTurno();
-        add(comboBox);
 
-        cmbCancha.addItemListener(new ItemListener() {
-            public void itemStateChanged(ItemEvent e) {
-                if (e.getStateChange() == ItemEvent.SELECTED) {
 
-                    String seleccionado = (String) cmbCancha.getSelectedItem();
-                    System.out.println(seleccionado);
-                }
 
-            }
-        });
-        cmbStatus.addItemListener(new ItemListener() {
-            public void itemStateChanged(ItemEvent e) {
-                if (e.getStateChange() == ItemEvent.SELECTED) {
-
-                    String seleccionado = (String) cmbStatus.getSelectedItem();
-                    if (seleccionado.equals("UnAvailable")) {
-                        txtmotivo.setEnabled(true);
-                    }
-                    System.out.println(seleccionado);
-                }
-
-            }
-        });
-
-    */
     }
 
 
@@ -186,7 +85,6 @@ public class FrmPrincipal extends JFrame {
             JFrame frame = new JFrame("Client");
             frame.setContentPane(new FrmClient(frame).Client);
             frame.pack();
-            //frame.setSize(800,600);
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
 
@@ -213,9 +111,6 @@ public class FrmPrincipal extends JFrame {
             frame.setSize(800, 600);
             frame.setLocationRelativeTo(null);
             frame.setVisible(true);
-
-
-
     }
 
 
